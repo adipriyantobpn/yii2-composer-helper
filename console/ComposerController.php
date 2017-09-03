@@ -307,6 +307,13 @@ class ComposerController extends Controller
                 $execCmd = $this->gitCmd . "add .";
                 $this->executeShell($execCmd, $gitMsgs, $gitReturnVal);
 
+                $forbiddenStrings = [
+                    ' ',
+                    ':',
+                ];
+                foreach ($forbiddenStrings as $string) {
+                    $packageName = strpos($packageName, $string) ? substr($packageName, 0, strpos($packageName, $string)+1) : $packageName;
+                }
                 $execCmd = $this->composerCmd . "show --no-ansi {$packageName}";
                 $this->executeShell($execCmd, $commitMsgs, $composerReturnVal);
 
