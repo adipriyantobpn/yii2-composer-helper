@@ -18,7 +18,9 @@ class Bootstrap implements BootstrapInterface
      */
     public function bootstrap($app)
     {
-        // TODO: Implement bootstrap() method.
+        if ($app instanceof \yii\console\Application) {
+            $app->controllerMap['composer'] = 'adipriyantobpn\composer\console\ComposerController';
+        }
     }
 
 }
