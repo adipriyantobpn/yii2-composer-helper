@@ -247,6 +247,7 @@ class ComposerController extends Controller
             $execCmd = $this->composerCmd . "show --no-ansi --format={$format} {$file}";
             $this->executeShell($execCmd, $composerMsgs, $composerReturnVal);
         }
+        return 0;
     }
 
     /**
@@ -265,6 +266,7 @@ class ComposerController extends Controller
         }
         $execCmd = $this->composerCmd . "show --no-ansi --available {$file}";
         $this->executeShell($execCmd, $composerMsgs, $composerReturnVal);
+        return 0;
     }
 
     /**
@@ -285,6 +287,7 @@ class ComposerController extends Controller
         $this->actionExportInstalledPackages(0, $installedPackageFilePath);
         $this->actionExportInstalledPackages(1, $installedPackageAsTreeFilePath);
         $this->actionExportAllAvailablePackages($allAvailablePackageFilePath);
+        return 0;
     }
 
     /**
@@ -323,5 +326,6 @@ class ComposerController extends Controller
                 }
             }
         }
+        return 0;
     }
 }
