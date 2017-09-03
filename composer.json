@@ -2,7 +2,14 @@
     "name": "adipriyantobpn/yii2-composer-helper",
     "description": "Composer helper for Yii2",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension", "console", "composer", "helper"],
+    "keywords": [
+        "yii2",
+        "extension",
+        "console",
+        "composer",
+        "helper"
+    ],
+    "homepage": "https://packagist.org/packages/adipriyantobpn/yii2-composer-helper",
     "license": "Apache-2.0",
     "authors": [
         {
