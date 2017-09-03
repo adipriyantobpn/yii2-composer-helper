@@ -40,7 +40,7 @@ class ComposerController extends Controller
      */
     protected function preparePathForShellCmd($path)
     {
-        return addslashes(realpath($path));
+        return addslashes(yii\helpers\FileHelper::normalizePath($path));
     }
 
     /**
