@@ -315,7 +315,7 @@ class ComposerController extends Controller
                     ':',
                 ];
                 foreach ($forbiddenStrings as $string) {
-                    $packageName = strpos($packageName, $string) ? substr($packageName, 0, strpos($packageName, $string)+1) : $packageName;
+                    $packageName = strpos($packageName, $string) ? substr($packageName, 0, strpos($packageName, $string)) : $packageName;
                 }
                 $execCmd = $this->composerCmd . "show --no-ansi {$packageName}";
                 $this->executeShell($execCmd, $commitMsgs, $composerReturnVal);
