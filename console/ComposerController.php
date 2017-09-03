@@ -291,7 +291,7 @@ class ComposerController extends Controller
     }
 
     /**
-     * Install packages via Composer, export the packages list, and commit them using git
+     * Install packages via Composer, export the packages list, and (optionally) commit them into version control using git
      *
      * @param string $packageName Package name
      * @param bool $preferSource Whether installing the package sources, or just install the package distribution
