@@ -18,5 +18,8 @@
         "psr-4": {
             "adipriyantobpn\\composer\\": ""
         }
+    },
+    "extra": {
+        "bootstrap": "adipriyantobpn\\composer\\Bootstrap"
     }
 }
