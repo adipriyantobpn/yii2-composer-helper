@@ -1,0 +1,22 @@
+{
+    "name": "adipriyantobpn/yii2-composer-helper",
+    "description": "Composer helper for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension", "console", "composer", "helper"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Adi Priyanto",
+            "email": "adipriyanto.bpn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "adipriyantobpn\\composer\\": ""
+        }
+    }
+}
