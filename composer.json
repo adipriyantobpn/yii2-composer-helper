@@ -1,7 +1,7 @@
 {
     "name": "adipriyantobpn/yii2-composer-helper",
-    "description": "Composer helper for Yii2",
     "type": "yii2-extension",
+    "description": "Composer helper for Yii2",
     "keywords": [
         "yii2",
         "extension",
@@ -17,16 +17,16 @@
             "email": "adipriyanto.bpn@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "*"
+    },
+    "extra": {
+        "bootstrap": "adipriyantobpn\\composer\\Bootstrap"
     },
     "autoload": {
         "psr-4": {
             "adipriyantobpn\\composer\\": ""
         }
     },
-    "extra": {
-        "bootstrap": "adipriyantobpn\\composer\\Bootstrap"
-    }
+    "minimum-stability": "dev"
 }
